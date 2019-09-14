@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+    <string name="title_activity_dodavanje_knjige_akt">DodavanjeKnjigeAkt</string>
+    <string name="dPovratak">Back</string>
+    <string name="dKategorije">Categories</string>
+    <string name="dAutori">Authors</string>
+    <string name="dDodajKategoriju">Add category</string>
+    <string name="dDodajKnjigu">Add book</string>
+    <string name="dDodajKnjiguOnline">Add book online</string>
+    <string name="dPretraga">Search</string>
+    <string name="eNaziv">Name</string>
+    <string name="idKnjige">Books:</string>
+    <string name="textViewime">Author:</string>
+    <string name="textViewnaziv">Book:</string>
+    <string name="textViewkatgeorija">Category:</string>
+    <string name="dNadjiSliku">Find image</string>
+    <string name="dPonisti">Back</string>
+    <string name="dUpisiKnjigu">Add book</string>
+    <string name="dRun">Run</string>
+    <string name="dAdd">Add book</string>
+    <string name="sKategorije">Show categories</string>
+    <string name="textView4">Category:</string>
+    <string name="textView5">Result:</string>
+</resources>

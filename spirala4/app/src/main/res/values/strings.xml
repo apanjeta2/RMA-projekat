@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">ProjekatRMA</string>
+    <string name="title_activity_dodavanje_knjige_akt">DodavanjeKnjigeAkt</string>
+    <string name="dPovratak">Povratak</string>
+    <string name="dKategorije">Kategorije</string>
+    <string name="dAutori">Autori</string>
+    <string name="dDodajKategoriju">Dodaj kategoriju</string>
+    <string name="dDodajKnjigu">Dodaj knjigu</string>
+    <string name="dPretraga">Pretraga</string>
+    <string name="eNaziv">Naziv</string>
+    <string name="idKnjige">Broj knjiga:</string>
+    <string name="textViewime">Ime autora</string>
+    <string name="textViewnaziv">Naziv knjige</string>
+    <string name="textViewkatgeorija">Kategorija</string>
+    <string name="dNadjiSliku">Nađi sliku</string>
+    <string name="dPonisti">Poništi</string>
+    <string name="dUpisiKnjigu">Upiši knjigu</string>
+    <string name="dRun">Pretraga</string>
+    <string name="dAdd">Dodaj knjigu</string>
+    <string name="sKategorije">Kategorije</string>
+    <string name="textView4">Kategorija:</string>
+    <string name="textView5">Rezultat:</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+</resources>

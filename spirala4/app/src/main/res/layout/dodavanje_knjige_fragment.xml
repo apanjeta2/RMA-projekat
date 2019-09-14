@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/naslovnaStr"
+        android:layout_width="160dp"
+        android:layout_height="168dp"
+        android:layout_alignEnd="@+id/sKategorijaKnjige"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="112dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="18dp"
+        android:background="@android:drawable/alert_light_frame"
+        android:backgroundTint="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sKategorijaKnjige"></ImageView>
+
+    <EditText
+        android:id="@+id/imeAutora"
+        android:layout_width="261dp"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/nazivKnjige"
+        android:layout_marginEnd="23dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewime"
+        app:layout_constraintTop_toBottomOf="@+id/nazivKnjige"></EditText>
+
+    <EditText
+        android:id="@+id/nazivKnjige"
+        android:layout_width="261dp"
+        android:layout_height="42dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textViewime"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewnaziv"
+        app:layout_constraintTop_toTopOf="parent"></EditText>
+
+    <Spinner
+        android:id="@+id/sKategorijaKnjige"
+        android:layout_width="261dp"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imeAutora"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewkategorija"
+        app:layout_constraintTop_toBottomOf="@+id/imeAutora"></Spinner>
+
+    <TextView
+        android:id="@+id/textViewime"
+        android:layout_width="71dp"
+        android:layout_height="23dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/textViewime"
+        app:layout_constraintEnd_toStartOf="@+id/imeAutora"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewnaziv"></TextView>
+
+    <TextView
+        android:id="@+id/textViewnaziv"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/imeAutora"
+        android:layout_alignStart="@+id/textViewkategorija"
+        android:layout_marginEnd="26dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/textViewnaziv"
+        app:layout_constraintEnd_toStartOf="@+id/nazivKnjige"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/textViewkategorija"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textViewime"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/textViewkatgeorija"
+        app:layout_constraintEnd_toStartOf="@+id/sKategorijaKnjige"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewime"></TextView>
+
+    <Button
+        android:id="@+id/dNadjiSliku"
+        android:layout_width="156dp"
+        android:layout_height="44dp"
+        android:layout_alignEnd="@+id/naslovnaStr"
+        android:layout_below="@+id/naslovnaStr"
+        android:layout_marginEnd="114dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="18dp"
+        android:onClick="NadjiSlikuOnClick"
+        android:text="@string/dNadjiSliku"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/naslovnaStr"></Button>
+
+    <Button
+        android:id="@+id/dPonisti"
+        android:layout_width="160dp"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/sKategorijaKnjige"
+        android:layout_marginEnd="13dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/dPonisti"
+        app:layout_constraintEnd_toStartOf="@+id/dUpisiKnjigu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dNadjiSliku"></Button>
+
+    <Button
+        android:id="@+id/dUpisiKnjigu"
+        android:layout_width="160dp"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/dPonisti"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/dUpisiKnjigu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dPonisti"
+        app:layout_constraintTop_toBottomOf="@+id/dNadjiSliku"></Button>
+
+</android.support.constraint.ConstraintLayout>

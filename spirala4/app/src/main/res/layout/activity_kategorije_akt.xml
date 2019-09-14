@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ba.unsa.etf.rma.ajla.projekatrma.KategorijeAkt">
+
+
+   <!-- <EditText
+        android:id="@+id/textPretraga"
+        android:layout_width="208dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/dDodajKategoriju"
+        app:layout_constraintEnd_toStartOf="@+id/dPretraga"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/dPretraga"
+        android:layout_width="133dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="Pretraga"
+        app:layout_constraintBottom_toTopOf="@+id/dDodajKnjigu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textPretraga"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/dDodajKategoriju"
+        android:layout_width="159dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="28dp"
+        android:text="Dodaj kategoriju"
+        app:layout_constraintEnd_toStartOf="@+id/dDodajKnjigu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPretraga" />
+
+    <Button
+        android:id="@+id/dDodajKnjigu"
+        android:layout_width="159dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="17dp"
+        android:text="Dodaj knjigu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dPretraga" />
+
+    <ListView
+        android:id="@+id/listaKategorija"
+        android:layout_width="325dp"
+        android:layout_height="338dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dDodajKategoriju" />
+-->
+
+    <FrameLayout
+
+        android:id="@+id/dLayout"
+        android:layout_width="368dp"
+        android:layout_height="497dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

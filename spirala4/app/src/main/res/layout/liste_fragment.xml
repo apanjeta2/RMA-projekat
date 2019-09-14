@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/dPretraga"
+        android:layout_width="99dp"
+        android:layout_height="53dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/dAutori"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/dPretraga"
+        app:layout_constraintBottom_toTopOf="@+id/dKategorije"
+        app:layout_constraintEnd_toStartOf="@+id/dDodajKategoriju"
+        app:layout_constraintStart_toEndOf="@+id/textPretraga"
+        app:layout_constraintTop_toBottomOf="@+id/dDodajKnjigu"></Button>
+
+    <EditText
+        android:id="@+id/textPretraga"
+        android:layout_width="172dp"
+        android:layout_height="49dp"
+        android:layout_alignBaseline="@+id/dPretraga"
+        android:layout_alignBottom="@+id/dPretraga"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/dKategorije"
+        app:layout_constraintEnd_toStartOf="@+id/dPretraga"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"></EditText>
+
+    <Button
+        android:id="@+id/dDodajKategoriju"
+        android:layout_width="99dp"
+        android:layout_height="53dp"
+        android:layout_alignBaseline="@+id/dDodajKnjigu"
+        android:layout_alignBottom="@+id/dDodajKnjigu"
+        android:layout_alignEnd="@+id/listaKategorija"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/dDodajKategoriju"
+        app:layout_constraintBottom_toTopOf="@+id/dKategorije"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dPretraga"
+        app:layout_constraintTop_toBottomOf="@+id/dDodajOnline"></Button>
+
+    <Button
+        android:id="@+id/dDodajKnjigu"
+        android:layout_width="120dp"
+        android:layout_height="57dp"
+        android:layout_alignStart="@+id/textPretraga"
+        android:layout_below="@+id/textPretraga"
+        android:layout_marginStart="12dp"
+        android:text="@string/dDodajKnjigu"
+        app:layout_constraintEnd_toStartOf="@+id/dDodajOnline"
+        app:layout_constraintStart_toEndOf="@+id/dAutori"
+        app:layout_constraintTop_toTopOf="parent"></Button>
+
+    <Button
+        android:id="@+id/dAutori"
+        android:layout_width="120dp"
+        android:layout_height="57dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/dAutori"
+        app:layout_constraintEnd_toStartOf="@+id/dDodajKnjigu"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/dDodajOnline"
+        android:layout_width="120dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="12dp"
+        android:text="@string/dDodajKnjiguOnline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dDodajKnjigu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/dKategorije"
+        android:layout_width="363dp"
+        android:layout_height="45dp"
+        android:layout_alignEnd="@+id/dDodajKnjigu"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/dKategorije"
+        app:layout_constraintBottom_toTopOf="@+id/listaKategorija"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ListView
+        android:id="@+id/listaKategorija"
+        android:layout_width="347dp"
+        android:layout_height="197dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textPretraga"
+        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.655"
+        app:layout_constraintStart_toStartOf="parent"></ListView>
+
+    <!-- <Button
+         android:id="@+id/dKategorije"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="@string/dKategorije" />
+
+     <Button
+         android:id="@+id/dAutori"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text= "@string/dAutori" />
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+         <ListView
+             android:id="@+id/listaKategorija"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentStart="true"
+             android:layout_below="@+id/dDodajKnjigu"
+             android:layout_marginTop="17dp" />
+
+         <Button
+             android:id="@+id/dDodajKategoriju"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBaseline="@+id/dDodajKnjigu"
+             android:layout_alignBottom="@+id/dDodajKnjigu"
+             android:layout_alignEnd="@+id/dPretraga"
+             android:layout_weight="1"
+             android:text="@string/dDodajKategoriju" />
+
+         <Button
+             android:id="@+id/dDodajKnjigu"
+             android:layout_width="151dp"
+             android:layout_height="wrap_content"
+             android:layout_alignStart="@+id/textPretraga"
+             android:layout_below="@+id/textPretraga"
+             android:layout_marginTop="14dp"
+             android:layout_weight="1"
+             android:text="@string/dDodajKnjigu" />
+
+         <Button
+             android:id="@+id/dPretraga"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBottom="@+id/textPretraga"
+             android:layout_alignParentEnd="true"
+             android:layout_marginEnd="16dp"
+             android:layout_weight="1"
+             android:text="@string/dPretraga" />
+
+         <EditText
+             android:id="@+id/textPretraga"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentStart="true"
+             android:layout_alignParentTop="true"
+             android:layout_marginStart="28dp"
+             android:layout_weight="1"
+             android:ems="10"
+             android:inputType="textPersonName"
+             android:text="Name" />
+     </RelativeLayout>  -->
+
+
+</android.support.constraint.ConstraintLayout>
